@@ -1,0 +1,12 @@
+name: ci
+on:
+  push:
+    branches:
+      - docker
+jobs:
+  Dockerfile:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+        
